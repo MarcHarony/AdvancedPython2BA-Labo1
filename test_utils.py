@@ -14,7 +14,7 @@ class TestUtils(unittest.TestCase):
         >>>fact(5)
         120
         """
-        self_compute(self):
+        self_fact(self):
             self.assertEqual(utils.fact(1),1)
             self.assertEqual(utils.fact(5),120)
     def test_roots(self):
@@ -22,7 +22,7 @@ class TestUtils(unittest.TestCase):
         >>>roots(1,-2,1)
         1
         """
-        self_compute(self):
+        self_roots(self):
             self.assertEqual(utils.roots(1,-2,1),1)
         
     def test_integrate(self):
@@ -31,7 +31,7 @@ class TestUtils(unittest.TestCase):
         11
         """
         self_compute(self):
-            self.assertEqual(utils.integrate('machin', 0,3),11)
+            self.integrate(utils.integrate('machin', 0,3),11)
 
 if __name__ == '__main__':
     suite = unittest.TestLoader().loadTestsFromTestCase(TestUtils)
