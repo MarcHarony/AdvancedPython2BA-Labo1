@@ -4,6 +4,7 @@
 
 import unittest
 import utils
+import doctest
 
 class TestUtils(unittest.TestCase):
     def test_fact(self):
