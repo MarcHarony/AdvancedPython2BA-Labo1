@@ -8,33 +8,26 @@ import utils
 class TestUtils(unittest.TestCase):
     def test_fact(self):
         """
-        a = fact(1)
-        if a == 1 :
-            print("fact(1) ok")
-        else :
-            print("fact(1) failure")
+        >>>fact(1)
+        1
+        >>>fact(5)
+        120
         """
         self_compute(self):
             self.assertEqual(utils.fact(1),1)
             self.assertEqual(utils.fact(5),120)
     def test_roots(self):
         """
-        a = roots(1,-2,1)
-        if a == 1 :
-            print("one root ok")
-        else :
-            print("one root failure")
+        >>>roots(1,-2,1)
+        1
         """
         self_compute(self):
             self.assertEqual(utils.roots(1,-2,1),1)
         
     def test_integrate(self):
         """
-        a = integrate('x',1,2)
-        if a == 1.5 :
-            print("integration ok")
-        else :
-            print("integration failure")
+        >>>integrate('machin',0,3)
+        11
         """
         self_compute(self):
             self.assertEqual(utils.integrate('machin', 0,3),11)
