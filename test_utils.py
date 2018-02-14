@@ -15,8 +15,8 @@ class TestUtils(unittest.TestCase):
             print("fact(1) failure")
         """
         self_compute(self):
-            self.assertEqual(utils.compute(1),1)
-            self.assertEqual(utils.compute(5),120)
+            self.assertEqual(utils.fact(1),1)
+            self.assertEqual(utils.fact(5),120)
     def test_roots(self):
         """
         a = roots(1,-2,1)
@@ -26,7 +26,7 @@ class TestUtils(unittest.TestCase):
             print("one root failure")
         """
         self_compute(self):
-            self.assertEqual(utils.compute(1,-2,1),1)
+            self.assertEqual(utils.roots(1,-2,1),1)
         
     def test_integrate(self):
         """
@@ -37,7 +37,7 @@ class TestUtils(unittest.TestCase):
             print("integration failure")
         """
         self_compute(self):
-            self.assertEqual(utils.compute('machin', 0,3),11)
+            self.assertEqual(utils.integrate('machin', 0,3),11)
 
 if __name__ == '__main__':
     suite = unittest.TestLoader().loadTestsFromTestCase(TestUtils)
