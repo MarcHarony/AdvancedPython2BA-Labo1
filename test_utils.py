@@ -28,7 +28,7 @@ class TestUtils(unittest.TestCase):
         >>>integrate('machin',0,3)
         11
         """
-        self.integrate(utils.integrate('machin', 0,3),11)
+        self.assertEqual(utils.integrate('machin', 0,3),11)
 
 if __name__ == '__main__':
     suite = unittest.TestLoader().loadTestsFromTestCase(TestUtils)
